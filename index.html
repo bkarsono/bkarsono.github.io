@@ -34,6 +34,9 @@
         <!-- Top Bar -->
         <nav class="navbar navbar-default sticky-top">
           <div class="container">
+            <div>
+              <span class="fs-3">Benjamin Karsono</span>
+            </div>
             <div class="topbar-buttons">
               <button @click="currentTab = 'About Me'">
                 <span :class="{'fw-bold': currentTab === 'About Me'}"
@@ -62,7 +65,8 @@
         <!-- Content -->
         <div class="container">
           <div class="row">
-            <div>Hi</div>
+            <div v-if="currentTab === 'About Me'" class="col-12">bkarsono@umich.edu</div>
+            <div v-if="currentTab === 'Projects'" class="col-12">Projects</div>
           </div>
         </div>
       </div>
