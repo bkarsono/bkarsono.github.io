@@ -1,0 +1,9 @@
+.topbar-buttons button {
+    border: 0;
+    background: none;
+}
+
+.topbar-buttons img {
+    height: 30px;
+    width: 30px;
+}

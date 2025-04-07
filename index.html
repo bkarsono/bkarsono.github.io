@@ -34,9 +34,37 @@
         <!-- Top Bar -->
         <nav class="navbar navbar-default sticky-top">
           <div class="container">
-			Hello world!
-		  </div>
+            <div class="topbar-buttons">
+              <button @click="currentTab = 'About Me'">
+                <span :class="{'fw-bold': currentTab === 'About Me'}"
+                  >About Me</span
+                >
+              </button>
+              <button @click="currentTab = 'Projects'">
+                <span :class="{'fw-bold': currentTab === 'Projects'}"
+                  >Projects</span
+                >
+              </button>
+            </div>
+            <div class="topbar-buttons">
+              <a href="https://x.com/nachoboy999" target="_blank"
+                ><button><img src="./assets/logo-twitter.svg" /></button
+              ></a>
+              <a href="https://linkedin.com/in/bkarsono/" target="_blank"
+                ><button><img src="./assets/logo-linkedin.svg" /></button
+              ></a>
+              <a href="https://instagram.com/nachoboy999" target="_blank"
+                ><button><img src="./assets/logo-instagram.svg" /></button
+              ></a>
+            </div>
+          </div>
         </nav>
+        <!-- Content -->
+        <div class="container">
+          <div class="row">
+            <div>Hi</div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>

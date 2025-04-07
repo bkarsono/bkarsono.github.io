@@ -2,7 +2,9 @@ const { createApp } = Vue;
 
 createApp({
   data() {
-    return {};
+    return {
+      currentTab: "About Me",
+    };
   },
   methods: {},
 }).mount("#app");
