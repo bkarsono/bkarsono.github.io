@@ -49,6 +49,11 @@
                   >Projects</span
                 >
               </button>
+              <button @click="currentTab = 'Academia'">
+                <span :class="{'fw-bold': currentTab === 'Academia'}"
+                  >Academia</span
+                >
+              </button>
             </div>
             <div class="topbar-buttons">
               <a href="https://x.com/nachoboy999" target="_blank"
@@ -76,11 +81,16 @@
               <h4>Email</h4>
               <span>bkarsono@umich.edu</span>
             </div>
+            <div v-if="currentTab === 'Academia'">
+              <h4>Coursework</h4>
+            </div>
             <div v-for="project in projects" class="project col-6">
               <div v-if="currentTab === 'Projects'" class="row">
                 <h4>{{project.name}}</h4>
                 <div class="col-sm-4 project-img">
-                  <a :href="project.imgHref" target="_blank"><img :src="project.imgUrl" /></a>
+                  <a :href="project.imgHref" target="_blank"
+                    ><img :src="project.imgUrl"
+                  /></a>
                 </div>
                 <div class="col-sm-6">{{project.description}}</div>
               </div>
