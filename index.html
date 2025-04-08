@@ -81,19 +81,21 @@
               <h4>Email</h4>
               <span>bkarsono@umich.edu</span>
             </div>
+            <template v-if="currentTab === 'Projects'">
+              <div v-for="project in projects" class="project col-6">
+                <div class="row">
+                  <h4>{{project.name}}</h4>
+                  <div class="col-sm-4 project-img">
+                    <a :href="project.imgHref" target="_blank"
+                      ><img :src="project.imgUrl"
+                    /></a>
+                  </div>
+                  <div class="col-sm-6">{{project.description}}</div>
+                </div>
+              </div>
+            </template>
             <div v-if="currentTab === 'Academia'">
               <h4>Coursework</h4>
-            </div>
-            <div v-for="project in projects" class="project col-6">
-              <div v-if="currentTab === 'Projects'" class="row">
-                <h4>{{project.name}}</h4>
-                <div class="col-sm-4 project-img">
-                  <a :href="project.imgHref" target="_blank"
-                    ><img :src="project.imgUrl"
-                  /></a>
-                </div>
-                <div class="col-sm-6">{{project.description}}</div>
-              </div>
             </div>
           </div>
         </div>
