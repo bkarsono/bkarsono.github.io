@@ -1,24 +1,24 @@
 .topbar-buttons button {
-    border: 0;
-    background: none;
+  border: 0;
+  background: none;
 }
 
 .topbar-buttons img {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 .project {
-    display: inline;
-    margin-bottom: 50px;
+  display: inline;
+  margin-bottom: 50px;
 }
 
 .project-img {
-    max-width: 200px;
-    margin-right: 30px;
+  max-width: 200px;
+  margin-right: 30px;
 }
 
 .project-img img {
-    width: 120%;
-    display: inline;
+  width: 120%;
+  display: inline;
 }
