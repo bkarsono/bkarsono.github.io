@@ -22,7 +22,7 @@ createApp({
         {
           name: "Draft Stars",
           imgUrl: "./assets/logo-brawl.jpg",
-          imgHref: "https://supercell.com/en/games/brawlstars/",
+          imgHref: "https://ranked-stars.web.app/",
           description: "In Progress...",
         },
       ],
