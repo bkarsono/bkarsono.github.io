@@ -13,17 +13,10 @@ createApp({
             "A Brawl Stars clone made in Unreal Editor for Fortnite.",
         },
         {
-          name: "Not Stake",
-          imgUrl: "./assets/logo-discord.jpg",
-          imgHref: "https://discord.com/",
-          description:
-            "A Discord bot that allows users to create events and predict outcomes using virtual currency.",
-        },
-        {
-          name: "Draft Stars",
+          name: "Ranked Stars",
           imgUrl: "./assets/logo-brawl.jpg",
           imgHref: "https://ranked-stars.web.app/",
-          description: "In Progress...",
+          description: "A replica of the Brawl Stars ranked UI.",
         },
       ],
     };
